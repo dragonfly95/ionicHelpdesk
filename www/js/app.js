@@ -8,7 +8,8 @@
 angular.module('app', [
   'ionic',
   'ngResource',
-  'ngStorage'
+  'ngStorage',
+  'firebase'
 ])
 
 .run(function($ionicPlatform, $window, $rootScope) {
@@ -32,7 +33,7 @@ angular.module('app', [
       // if (toState.authRequired && !Auth.isAuthenticated()){ //Assuming the AuthService holds authentication logic
       //   // User isn’t authenticated
       //   $state.transitionTo("login");
-      //   event.preventDefault(); 
+      //   event.preventDefault();
       // }
   });
 
