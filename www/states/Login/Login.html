@@ -1,0 +1,27 @@
+<ion-view view-title="Login">
+  <ion-title>login</ion-title>
+  <ion-content>
+
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="Email" ng-model="vm.Model.user.email">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="Password" ng-model="vm.Model.user.passwd">
+      </label>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <!-- <button class="button button-block button-positive"  ui-sref="main.faqList"> -->
+        <button class="button button-block button-positive" ng-click="vm.login();">
+          로그인  
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

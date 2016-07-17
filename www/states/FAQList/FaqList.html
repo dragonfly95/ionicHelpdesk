@@ -1,0 +1,26 @@
+ <ion-view view-title="FAQ List">
+  <ion-content>
+
+    <ion-list>
+      <ion-item 
+        ng-repeat="item in vm.Model.items"
+        ui-sref="main.faqDetail({id:item.index})">
+        Hello, {{item.index}}!
+
+        <div class="row">
+          <div class="col col-50">
+            left side
+          </div>
+          <div class="col col-50">
+            right side
+          </div>
+        </div>
+        
+      </ion-item> 
+    </ion-list>
+
+  </ion-content>
+</ion-view>
+
+
+<!-- href="#/main/faqDetail/{{item.index}}" -->
