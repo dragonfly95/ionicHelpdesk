@@ -1,0 +1,27 @@
+<ion-view view-title="FAQ 신규등록 ">
+  <ion-title>FAQ 신규</ion-title>
+  <ion-content>
+
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">제목</span>
+        <input type="text" placeholder="Title" ng-model="vm.Model.faq.titles">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">FAQ 내용 </span>
+        <input type="text" placeholder="Contents" ng-model="vm.Model.faq.contents">
+      </label>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <!-- <button class="button button-block button-positive"  ui-sref="main.faqList"> -->
+        <button class="button button-block button-positive" ng-click="vm.faqPost();">
+          POST
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>
