@@ -13,8 +13,7 @@
     LoginModel, Users, AppStorage
   ) {
 
-    var firebaseObj = new Firebase("https://onnurihelpdesk.firebaseio.com");
-    var auth = $firebaseAuth(firebaseObj);
+    var auth = $firebaseAuth();
 
 
     var vm = this;
@@ -27,7 +26,8 @@
 
     function login() {
 
-      auth.$authWithPassword(vm.Model.user)
+// debugger;
+      auth.$signInWithEmailAndPassword(vm.Model.user.email, vm.Model.user.password)
       // loginObj.$login('password',vm.Model.user)
         .then(function(user) {
           console.log('Authentication successful');

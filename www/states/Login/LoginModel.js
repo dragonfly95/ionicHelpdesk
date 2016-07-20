@@ -11,7 +11,7 @@
     var model = {
       user: {
         email: '',
-        passwd: ''
+        password: ''
       }
     };
 
